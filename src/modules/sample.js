@@ -28,7 +28,6 @@ const sample = handleActions(
   {
     [GET_POST_SUCCESS]: (state, action) => ({
       ...state,
-
       post: action.payload,
     }),
 
