@@ -12,7 +12,7 @@ const rootReducer = combineReducers({
 
 export function* rootSaga() {
   // all 함수는 여러 사가를 합쳐 주는 역할을 합니다.
-  yield all([counterSaga]);
+  yield all([counterSaga()]);
 }
 
 export default rootReducer;
